@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurations>
+	<browser>firefox</browser>
+	<deviceos>android</deviceos>
+	<adminURL>https://admin.qa1.onboardme.technology/index.html#/login</adminURL>
+	<androidAppName>obm_01242018_v1.0.0.25q.apk</androidAppName>
+	<androidDeviceName>Nexus_6_API_24</androidDeviceName>
+	<iosDeviceName>iPhone 6</iosDeviceName>
+	
+	<testdataFile>D:\\testPOC\\SelCukesFW\\src\\test\\resources\\configurations\\testdata.properties</testdataFile>
+	<adminLogin>
+	    <EmailaddressTxt locator="xpath">//input[@name='email']</EmailaddressTxt>
+	    <PasswordTxt locator="xpath">//input[@name='password']</PasswordTxt>
+	    <LOGINBtn locator="xpath">//button[@type='submit']</LOGINBtn>
+	</adminLogin>
+	<adminDashboard>
+	    <LOGOUTLnk locator="xpath">//span[text()='Log Out']</LOGOUTLnk>
+	    <StartingSoonTab locator="xpath">//*[@class='ng-scope']/descendant::span[text()='Starting Soon']</StartingSoonTab>
+	</adminDashboard>
+	<OBMLogin>
+		<EmailaddressTxt locator="xpath">//android.widget.EditText[@text ='Email address']</EmailaddressTxt>
+		<PasswordTxt locator="xpath">//android.widget.EditText[@text ='Password']</PasswordTxt>
+		<LOGINBtn locator="xpath">//android.widget.Button[@text ='LOG IN']</LOGINBtn>
+	</OBMLogin>
+	<OBMTermsAndCondition>
+		<ACCEPTBtn locator="xpath" device="android">//android.widget.Button[@text='ACCEPT']</ACCEPTBtn>
+		<ACCEPTBtn locator="xpath" device="ios">//ios.widget.Button[@text='ACCEPT']</ACCEPTBtn>
+	</OBMTermsAndCondition>
+	
+	
+</configurations>
