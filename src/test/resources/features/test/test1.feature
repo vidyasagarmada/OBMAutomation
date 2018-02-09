@@ -12,4 +12,4 @@ Scenario: TestID-1234 OBM Login scenario
 	And I click on "adminDashboard.LOGOUTLnk" button
 	Then I wait for "10" seconds
 	Then close browser window
-Edn of Feature
+Hello
